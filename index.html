@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackpink practica DOM</title>
+    <link rel="stylesheet" href="micss.css" >
+</head>
+<body>
+    <header class="header">
+        <h1>BLACK<span>PINK</span></h1>
+        <p>Explorador de BP... proximamente se podran buscar las canciones segun su discografia</p>
+    
+        <form id="search-form" class="search-box">
+          <input type="text" id="search-input" placeholder="Buscar integrante en minusculas(ej. jisoo, jennie, rosé, lisa)..." required>
+          <button type="submit">Buscar</button>
+        </form>
+    
+        <div class="controls">
+            <button data-query="BLACKPINK" class="active">TODAS</button>
+            <button data-query="Jisoo">JISOO</button>
+            <button data-query="Jennie">JENNIE</button>
+            <button data-query="Rose">ROSE</button>
+            <button data-query="Lisa">LISA</button>
+
+          </div>
+      </header>
+    
+      <main>
+        <p id="status-message" class="status">Cargando canciones...</p>
+        <section id="cards-container" class="grid-container"></section>
+      </main>
+    
+      <script src="java.js"></script>
+</body>
+</html>
